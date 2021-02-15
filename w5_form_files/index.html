@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew DiClerico">
+    <meta name="class" content="SE111.12">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <h1>Birthday Party Registration Form</h1>
+
+
+    <!--start of table-->
+    <table>
+        <thead>
+            <tr>
+                <td>Labels</td>
+                <td>Form Fields</td>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="gfirst">Parent Guardien Name</label>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" maxlength="20" name="gfirst" id="g-first" placeholder="First Name"></label> <br>
+                        <input type="text" maxlength="20" name="glast" id="g-last" placeholder="Last Name"></label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cfirst">Child's First Name</label>
+                </td>
+                <td>
+                    <input type="text" maxlength="20" name="cfirst" id="c-first" placeholder="Child's First Name"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date and Time
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date</label>
+                </td>
+                <td>
+                    <input type="date" name="date"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="time" name="time">Start Time</label>
+                </td>
+                <td>
+                    <input type="time" name="time"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number of Guests</label>
+                </td>
+                <td>
+                    <input type="number" name="guests" value="5"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Food</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Size</label>
+                </td>
+                <td>
+                    <input type="radio" name="small">sm</input>
+                    <input type="radio" name="medium">med</input>
+                    <input type="radio" name="large">lg</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Drinks</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="drink1" checked="true" value="coke"></input> <label for="drink1">Coke</label> <br>
+                    <input type="checkbox" name="drink2"  value="sprite"></input> <label for="drink2">Sprite</label> <br>
+                    <input type="checkbox" name="drink3"  value="fruit punch"></input> <label for="drink3">Fruit Punch</label> <br>
+                    <input type="checkbox" name="drink4"  value="lemonade"></input> <label for="drink4">Lemonade</label> <br>
+                    <input type="checkbox" name="drink5"  value="iced tea"></input> <label for="drink5">Iced Tea</label> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Cake</label>
+                </td>
+                <td>
+                    <select name="cake">
+                    <option>Chocolate</option>
+                    <option>Vanilla</option>
+                    <option>I'll bring my own</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Decorations</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="colors">Color Scheme</label>
+                </td>
+                <td>
+                    <label for="colors">Choose a color scheme for the party</label> <br>
+                    <input type="color" name="colors"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments">Additional Comments</label>
+                </td>
+                <td>
+                    <textarea placeholder="Please add any additional comments here" name="comments"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="Submit"></input>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>
