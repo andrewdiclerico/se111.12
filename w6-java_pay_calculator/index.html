@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 | Pay Calculator</title>
+</head>
+<body>
+    <h1>W6 | Pay Calculator</h1>
+
+    <script>
+        
+        
+        
+        //asking for hourly pay
+        var hourlyPay = prompt("Enter your hourly pay rate: ")
+
+        //asking how many hours worked over a two week period
+        var hoursWorked = prompt("Enter the amount of hours worked over two week period: ")
+
+        //displays the tax rate
+        alert("The tax rate is 20%")
+
+        //tax rate
+        var taxRate = .20
+        
+        //calculates total earned / gross pay
+        total = hourlyPay * hoursWorked
+
+        //calculates how much is taken out / uncle sams share
+        taxTaken = total * taxRate
+
+        //calculates total left / net pay
+        netPay = total - taxTaken
+
+        //message showsing gross pay, uncle sam's share, net pay
+        alert(`Gross Pay:                $${total}\nUncle Sam's Share:  $${taxTaken} \nNet Pay:                   $${netPay}`)
+        
+        //console log x3
+        console.log(`Gross Pay: ${total}`)
+        console.log(`Uncle Sams Share: ${taxTaken}`)
+        console.log(`Net Pay: ${netPay}`)
+
+
+
+
+    </script>
+
+
+</body>
+</html>
