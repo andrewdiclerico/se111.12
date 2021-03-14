@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andrew DiClerico">
+	<meta name="assignment" content="w8 - Javascript object">
     <title>Week 8 | Homework Assignment</title>
 </head>
 <body>
@@ -36,13 +38,17 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		
+		var first = document.querySelector(`#first`).value
+		var last = document.querySelector(`#last`).value
+
+
 
 		//Make an array to store the people
-		
+		var allPeople = [person, person, person]
+
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		
+		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -66,17 +72,23 @@
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
 
+
             var person = {
+				first: `${first}`,
+				last: `${last}`
+
 
 
 
             }//end of person object
 
 
-
+			console.log(`${person.first} ${person.last}`)
 
 			//Add the person object into the people array by using the .push() array method.
-			
+
+
+			console.log(allPeople)
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
